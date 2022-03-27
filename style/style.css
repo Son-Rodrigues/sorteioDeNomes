@@ -1,0 +1,138 @@
+body,header,img,h1,h2,main,section,p,div,input,textarea,button,label,footer,hr{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: #eeeeee;
+}
+
+header {
+	background-color: #0d15eb;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;
+}
+
+header img {
+	width: 100px;
+	margin-right: 5px;
+}
+
+header h1 {
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+.app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 65vh;
+}
+
+section {
+	box-shadow: 5px 5px 5px #808080;
+	padding: 30px;
+	background-color: #fff;
+	width: 60vw;
+	height: 40vh;
+	color: #808080;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+@media (max-width: 800px) {
+	section {
+		height: 60vh;
+	}
+}
+
+section h2 {
+	font-weight: 400;
+}
+
+section p {
+	margin: 10px 0;
+}
+
+.text-left {
+	text-align: left;
+}
+
+section label {
+	display: none;
+}
+
+section textarea {
+	display: block;
+	padding: 10px;
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 10vh;
+	height: 15vh;
+	max-height: 20vh;
+}
+
+section button {
+	background-color: #0d15ed;
+	color: #fff;
+	border: none;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+footer {
+	background-color: #0d15ed;
+	height: 15vh;
+}
+
+.resultado {
+	position: absolute;
+	background-color: rgb(4 20 62 / 89%);
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	left: -100%;
+	transition: 0.5s;
+}
+
+.resultado.mostrarResultado {
+	left:  0px;
+	transition: 0.5s;
+}
+
+.resultado span {
+	float: right;
+	margin: 20px;
+	color: #fff;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	border: solid #fff 2px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.resultado p {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
